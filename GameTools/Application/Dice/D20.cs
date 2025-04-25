@@ -9,9 +9,9 @@ namespace Application.Dice
     /// </summary>
     public class D20 : IDie
     {
-        private readonly INumberGenerator _generator;
+        private readonly NumberGenerator _generator;
 
-        public D20(INumberGenerator generator)
+        public D20(NumberGenerator generator)
         {
             _generator = generator;
         }
