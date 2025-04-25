@@ -5,15 +5,7 @@ namespace Core.Utilities
     /// <summary>
     /// Wrapper around System.Random -- do not test external dependency libraries, test how your code reacts to them
     /// </summary>
-    public interface INumberGenerator
-    {
-        int GetNumber();
-    }
-
-    /// <summary>
-    /// Wrapper around System.Random -- do not test external dependency libraries, test how your code reacts to them
-    /// </summary>
-    public class NumberGenerator : INumberGenerator
+    public class NumberGenerator
     {
         private readonly Random _generator;
         private readonly int _floor;
